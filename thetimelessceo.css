@@ -81,6 +81,11 @@
       rgba(75, 28, 63, 1) 90%);
 }
 
+/* Dark mode Selector */
+#pg-afcp-navbar__navigation-dark-mode-button {
+    visibility: hidden;
+}
+
 /* Img: avatar */
 #pg-afcp-navbar__navigation-page-img-avatar-profile-btn img {
   background-color: var(--color-accent);
@@ -182,10 +187,7 @@
   font-weight: var(--font-weight-subheadline);
   font-size: 20px;
   color: var(--color-subheadline);
-  text-shadow: rgba(75, 28, 63, 1) 0px 1px 1px,
-    rgba(75, 28, 63, 1) 0px -1px 1px,
-    rgba(75, 28, 63, 1) 1px 0px 1px,
-    rgba(75, 28, 63, 1) -1px 0px 1px;
+  text-shadow: var(--text-shadow-outline);
   padding-top: 6px;
   cursor: text;
 }
@@ -195,11 +197,7 @@
   font-family: var(--font-family-headline);
   font-weight: var(--font-weight-subheadline);
   color: var(--color-subheadline);
-  text-shadow:
-    rgba(75, 28, 63, 1) 0px 1px 1px,
-    rgba(75, 28, 63, 1) 0px -1px 1px,
-    rgba(75, 28, 63, 1) 1px 0px 1px,
-    rgba(75, 28, 63, 1) -1px 0px 1px;
+  text-shadow: var(--text-shadow-outline);
 }
 
 /* Text: content */
