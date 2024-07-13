@@ -1,0 +1,463 @@
+:root {
+  --color-primary: #751842;
+  --color-accent: #f0bb32;
+  --color-off-white: #f2f2f2;
+  --color-gray: #cccccc;
+  --color-subheadline: rgb(138, 152, 226);
+  --font-family-headline: 'Ropa Sans', sans-serif;
+  --font-weight-headline: 700;
+  --font-weight-subheadline: 400;
+  --font-weight-button: 600;
+  --font-size-button: 16px;
+  --border-primary-style: 1px var(--color-primary) solid;
+  --border-accent-style: 1px var(--color-accent) solid;
+  --border-active-style: 2px var(--color-accent) solid;
+  --border-secondary-style: 1px var(--color-gray) solid;
+  --text-shadow-outline: 
+    rgba(75, 28, 63, 1) 0px 1px 1px,
+    rgba(75, 28, 63, 1) 0px -1px 1px,
+    rgba(75, 28, 63, 1) 1px 0px 1px,
+    rgba(75, 28, 63, 1) -1px 0px 1px;
+}
+
+/* ------------------------ GLOBAL SPACING ------------------------ */
+
+/* Globe Sub headlines */
+#side-bar\ h-container .hl-text-sm-normal,
+.\32 xl\:mt-\[7\.25rem\] .text-sm .hl-text-md-normal {
+  padding-left: 5px;
+}
+
+/* Button: Add Channel */
+#side-bar\ h-container .border-\[0\.5px\] .text-communities-sidebar-selected-item-font {
+  padding-top: 4px;
+}
+
+/* ------------------------ BACKGROUNDS ------------------------ */
+/* Header */
+.lg\:mobile-padding>.justify-between .justify-between {
+  background: rgb(17, 17, 17);
+  background-image:
+    linear-gradient(211deg,
+      rgba(17, 17, 17, 1) 0%,
+      rgba(75, 28, 63, 1) 20%,
+      rgba(117, 18, 66, 1) 35%,
+      rgba(156, 0, 53, 1) 50%,
+      rgba(190, 29, 0, 1) 65%,
+      rgba(218, 36, 79, 1) 75%,
+      rgba(194, 141, 65, 1) 90%,
+      rgba(240, 187, 50, 1) 95%,
+      rgba(247, 208, 106, 1) 98%,
+      rgba(240, 216, 153, 1) 100%);
+}
+
+/* Div: side bar */
+#side-bar\ h-container .container {
+  background-color: var(--color-off-white);
+}
+
+/* Sub-Header */
+.flex-auto .lg\:mobile-padding .bg-communities-background>.w-full {
+  background-color: var(--color-off-white);
+}
+
+/* Div: Main BG */
+.justify-center.bg-communities-surface {
+  background-color: var(--color-off-white);
+}
+
+/* Buttons BG / Div: Group Info / Settings / Leaderboard */
+.info-sidebar-scrollbar,
+#side-bar\ h-container .border-\[0\.5px\] .n-button,
+#side-bar\ h-container .bg-communities-primary,
+.\32 xl\:mt-\[7\.25rem\] .community-button-primary {
+  background: rgb(75, 28, 63);
+  background-image:
+    linear-gradient(155deg,
+      rgba(75, 28, 63, 1) 10%,
+      rgba(117, 18, 66, 1) 25%,
+      rgba(156, 0, 53, 1) 50%,
+      rgba(117, 18, 66, 1) 75%,
+      rgba(75, 28, 63, 1) 90%);
+}
+
+/* Img: avatar */
+#pg-afcp-navbar__navigation-page-img-avatar-profile-btn img {
+  background-color: var(--color-accent);
+}
+
+/* Buttons: Group Info */
+#invitation__btn,
+#settings__btn,
+#invitation__btn:hover,
+#settings__btn:hover {
+  background-color: transparent;
+  background-image: none;
+  border: none !important;
+  cursor: text;
+}
+
+/* Modal: My Profile  */
+.flex-col.justify-between {
+    background-color: var(--color-primary) !important;
+    background-image: none !important;
+}
+
+/* Button: Edit Profile */
+.my-4 .community-button-tertiary {
+    background-color: var(--color-off-white);
+}
+
+/* Buttons: My Profile Account / Logout */
+#pg-afcp-common__navbar-account-btn:hover,
+#pg-afcp-common__navbar-logout-btn:hover {
+    background-color: var(--color-accent);
+}
+
+/* ------------------------ TYPOGRAPHY ------------------------ */
+/* Modal: My Profile Name  */
+.font-bold {
+    font-size: 16px;
+    color: var(--color-accent);
+}
+
+/* Button: Edit Profile */
+.mx-6.text-communities-font-primary {
+      font-family: var(--font-family-headline);
+  font-weight: var(--font-weight-button);
+  color: var(--color-primary) !important;
+}
+
+/* Buttons: My Profile Account / Logout */
+.pt-1,
+.pb-2.hl-text-sm-medium {
+    color: var(--color-subheadline);
+        text-shadow:  var(--text-shadow-outline);
+}
+
+#pg-afcp-common__navbar-account-btn:hover> .pt-1,
+#pg-afcp-common__navbar-logout-btn:hover> .pb-2.hl-text-sm-medium {
+   color: var(--color-primary);
+    text-shadow:  none;
+}
+
+/* Headlines */
+#side-bar\ h-container .font-medium.hl-text-md-medium,
+.border-communities-font-primary span {
+  font-family: var(--font-family-headline) !important;
+  font-weight: var(--font-weight-headline) !important;
+  color: var(--color-primary) !important;
+}
+
+/* Main Headline Section Selector inactive */
+#pg-afcp-navbar__navigation-page-discussion-btn span,
+#pg-afcp-navbar__navigation-page-learning-btn span,
+#pg-afcp-navbar__navigation-page-members-btn span,
+#pg-afcp-navbar__navigation-page-leaderboard-btn span {
+  font-family: var(--font-family-headline);
+  font-weight: var(--font-weight-subheadline);
+  color: var(--color-subheadline);
+}
+
+/* Headline: Group Info */
+.\32 xl\:mt-\[7\.25rem\] .text-lg {
+  font-family: var(--font-family-headline);
+  font-weight: var(--font-weight-headline);
+  color: var(--color-accent);
+}
+
+/* Group Info Stats */
+.\32 xl\:mt-\[7\.25rem\] .cursor-pointer .hl-text-md-medium,
+.\32 xl\:mt-\[7\.25rem\] .border-communities-border.font-normal .hl-text-md-medium,
+.\32 xl\:mt-\[7\.25rem\] .text-center .hl-text-md-medium {
+  font-family: var(--font-family-headline);
+  font-size: 30px;
+  font-weight: var(--font-weight-headline);
+  color: var(--color-accent);
+}
+
+/* Group Info Stats Subheadlines */
+.info-actions .justify-center .hl-text-md-normal {
+  font-family: var(--font-family-headline);
+  font-weight: var(--font-weight-subheadline);
+  font-size: 20px;
+  color: var(--color-subheadline);
+  text-shadow: rgba(75, 28, 63, 1) 0px 1px 1px,
+    rgba(75, 28, 63, 1) 0px -1px 1px,
+    rgba(75, 28, 63, 1) 1px 0px 1px,
+    rgba(75, 28, 63, 1) -1px 0px 1px;
+  padding-top: 6px;
+  cursor: text;
+}
+
+/* Subheadline: Group Info */
+.\32 xl\:mt-\[7\.25rem\] .text-sm .hl-text-md-normal {
+  font-family: var(--font-family-headline);
+  font-weight: var(--font-weight-subheadline);
+  color: var(--color-subheadline);
+  text-shadow:
+    rgba(75, 28, 63, 1) 0px 1px 1px,
+    rgba(75, 28, 63, 1) 0px -1px 1px,
+    rgba(75, 28, 63, 1) 1px 0px 1px,
+    rgba(75, 28, 63, 1) -1px 0px 1px;
+}
+
+/* Text: content */
+.\32 xl\:mt-\[7\.25rem\] .hl-text-lg-medium {
+  color: var(--color-off-white)
+}
+
+/* Groups/Channel Active */
+#side-bar\ h-container .hover\:text-communities-sidebar-font-primary.text-communities-sidebar-font-primary {
+  font-family: var(--font-family-headline);
+  font-weight: 600 !important;
+  color: var(--color-primary);
+}
+
+/* Groups/Channel inactive */
+#side-bar\ h-container .text-communities-sidebar-font-secondary.hl-text-md-medium {
+  font-family: var(--font-family-headline);
+  font-weight: var(--font-weight-subheadline);
+  color: var(--color-subheadline);
+}
+
+/* Sub headlines */
+#side-bar\ h-container .hl-text-sm-normal {
+  color: var(--color-subheadline);
+  padding-left: 5px;
+}
+
+/* Buttons */
+#side-bar\ h-container .text-communities-sidebar-selected-item-font.hl-text-md-medium,
+.\32 xl\:mt-\[7\.25rem\] .community-button-primary .hl-text-md-medium,
+#side-bar\ h-container .border-\[0\.5px\] .text-communities-sidebar-selected-item-font {
+  color: var(--color-accent);
+  font-weight: 600 !important;
+  font-size: var(--font-size-button);
+}
+
+/* Buttons: Settings */
+#invitation__btn .hl-text-md-medium {
+  font-size: 0px;
+}
+
+#invitation__btn span:hover>.hl-text-md-medium,
+#settings__btn:hover>span {
+  color: var(--color-subheadline);
+  cursor: pointer;
+}
+
+#settings__btn span,
+#settings__btn:hover>span {
+  color: var(--color-accent)
+}
+
+#invitation__btn .hl-text-md-medium:after {
+  font-size: 24px;
+  content: '➡ INVITE MEMBERS ⬅';
+}
+
+#settings__btn span:hover,
+#invitation__btn .hl-text-md-medium:hover {
+  color: var(--color-primary) !important;
+  text-shadow:
+    rgb(255, 255, 255) 0px 0px 2px,
+    rgb(255, 255, 255) 0px 0px 4px,
+    #ffd467 0px 0px 6px,
+    #ffd467 0px 0px 8px,
+    #ffd467 0px 0px 12px,
+    #ffd467 0px 0px 16px,
+    #ffd467 0px 0px 20px,
+    #ffd467 0px 0px 24px;
+}
+
+/* Channel List */
+#side-bar\ h-container .col-span-4.text-communities-sidebar-font-primary {
+  font-family: var(--font-family-headline);
+  font-weight: var(--font-weight-headline);
+  color: var(--color-primary);
+}
+
+/* Post Input Text */
+.shadow-sm div {
+  font-family: var(--font-family-headline) !important;
+  color: var(--color-subheadline);
+}
+
+/* Leaderboard */
+/* Text medium */
+#group_info .justify-between .hl-text-md-medium {
+  text-align: center;
+  font-size: 0px;
+  padding-top: 2px;
+  margin-bottom: -2px;
+  color: var(--color-primary);
+}
+
+#group_info .justify-between .hl-text-md-medium:after {
+  font-size: 24px !important;
+  content: "Rollin' 30 Leaderboard";
+}
+
+/* Not Activity Notice */
+.px-5 .text-communities-font-secondary {
+  color: var(--color-gray);
+}
+
+/* View Leaderboard */
+.text-communities-tertiary {
+  font-size: 0px;
+  color: var(--color-subheadline);
+}
+
+.text-communities-tertiary:after {
+  font-family: var(--font-family-headline);
+  font-size: 16px;
+  content: 'View Leaderboards';
+}
+
+/* ------------------------ ICONS ------------------------ */
+/* Remove Dark Mode Selector */
+#pg-afcp-navbar__navigation-dark-mode-button .sun-icon {
+    visibility: hidden;
+}
+
+/* Icon: home /globe / reading mode / channel icons */
+.homeIcon path,
+#side-bar\ h-container .w-4,
+#side-bar\ h-container .rounded-full path,
+#side-bar\ h-container .text-communities-sidebar-font-primary.w-5 path {
+  color: var(--color-primary);
+}
+
+/* Icon: sun / grid / notifs / button people / group info globe*/
+#pg-afcp-navbar__navigation-dark-mode-button .sun-icon,
+#pg-afcp-navbar__navigation-page-app-launcher-btn .h-5,
+#pg-afcp-navbar__navigation-page-app-launcher-btn .n-badge .h-\[21px\],
+#side-bar\ h-container .text-communities-sidebar-selected-item-font path,
+.\32 xl\:mt-\[7\.25rem\] path {
+  color: var(--color-accent);
+}
+
+/* Icon: sun / grid / notifs [hover] */
+#pg-afcp-navbar__navigation-dark-mode-button:hover,
+#pg-afcp-navbar__navigation-page-app-launcher-btn:hover {
+  background-color: var(--color-accent);
+}
+
+#pg-afcp-navbar__navigation-dark-mode-button:hover>.sun-icon,
+#pg-afcp-navbar__navigation-page-app-launcher-btn:hover>.h-5,
+#pg-afcp-navbar__navigation-page-app-launcher-btn:hover>.n-badge .h-\[21px\] {
+  color: var(--color-primary);
+}
+
+.rounded-full.text-communities-sidebar-font-secondary:hover {
+  background-color: var(--color-primary);
+}
+
+.rounded-full.text-communities-sidebar-font-secondary:hover>.homeIcon path {
+  color: var(--color-accent);
+}
+
+/* ------------------------ BORDERS & CURSORS ------------------------ */
+/* Modal: My Profile  */
+.ring-1,
+.max-h-screen div .lg\:max-w-xs,
+.max-h-screen .absolute .justify-between {
+    border: none!important;
+}
+/*.max-h-screen .absolute .justify-between {
+    border: var(--border-accent-style);
+}
+
+#pg-afcp-common__navbar-account-btn {
+    border-top:  var(--border-accent-style)!important;
+}
+
+/* Main Headline Section Selector Active */
+.border-communities-font-primary {
+  border-bottom: var(--border-active-style) !important;
+  cursor: text;
+}
+
+/* Main Headline Section Selector inactive */
+#pg-afcp-navbar__navigation-page-discussion-btn,
+#pg-afcp-navbar__navigation-page-learning-btn,
+#pg-afcp-navbar__navigation-page-members-btn,
+#pg-afcp-navbar__navigation-page-leaderboard-btn {
+  border-bottom: var(--border-secondary-style);
+}
+
+/* Div: side bar */
+#side-bar\ h-container .container {
+  border-right: var(--border-secondary-style);
+}
+
+/* Sidebar Home Button bottom border */
+#side-bar\ h-container .border-communities-sidebar-border.py-4 {
+  border-bottom: 3px var(--color-accent) solid;
+}
+
+
+/* Groups/Channel Active */
+#side-bar\ h-container .border-communities-primary {
+  border-bottom: var(--border-active-style);
+  cursor: text;
+}
+
+/* Add Channel Top Border */
+#side-bar\ h-container .border-\[0\.5px\] {
+  border-top: var(--border-secondary-style);
+}
+
+#side-bar\ h-container .border-transparent {
+  border-bottom: var(--border-secondary-style);
+}
+
+/* Div: Groups/Channels */
+#side-bar\ h-container .border-t-0.px-4 {
+  border: none;
+}
+
+.rounded-t-xl {
+  border-bottom: 1px var(--color-accent) solid;
+}
+
+/* Div: Group Info & Settings */
+.info-sidebar-scrollbar {
+  border: var(--border-active-style);
+}
+
+/* Button: Settings */
+#settings__btn .n-button__border,
+#settings__btn .n-button__state-border {
+  border: none;
+  cursor: pointer;
+}
+
+/* Group Info Stats */
+.\32 xl\:mt-\[7\.25rem\] .text-center.border-b-0,
+.\32 xl\:mt-\[7\.25rem\] .cursor-pointer,
+.\32 xl\:mt-\[7\.25rem\] .info-actions {
+  border: none;
+  cursor: text;
+}
+
+/* Leaderboard */
+.rounded-tr-xl {
+  border-top: var(--border-primary-style);
+  border-left: var(--border-primary-style) !important;
+  border-right: var(--border-primary-style) !important
+}
+
+.justify-center.py-4 {
+  border-top: var(--border-secondary-style);
+  border-left: var(--border-primary-style);
+  border-right: var(--border-primary-style);
+  border-bottom: var(--border-primary-style)
+}
+
+#group_info .n-divider--no-title .n-divider__line--left {
+  border-top: 1px var(--color-accent) solid;
+  border-bottom: 1px var(--color-accent) solid;
+}
